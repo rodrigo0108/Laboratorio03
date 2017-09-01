@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+
+    android:orientation="vertical"
+    tools:context="com.rramos.laboratorio3.OrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tipo_pizza"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_pizzas"
+        android:layout_marginBottom="20dp">
+    </Spinner>
+
+    <RadioGroup
+        android:id="@+id/grupo_masa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/masa_gruesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_gruesa" />
+
+        <RadioButton
+            android:id="@+id/masa_delgada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_delgada" />
+
+        <RadioButton
+            android:id="@+id/masa_artesanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_artesanal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/complementos"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_mozarella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_mozarella"
+        android:onClick="androidCheckMasa"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_jamon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_jamon"
+        android:onClick="androidCheckMasa"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/direccion_envio"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ordenar"
+        android:onClick="androidRespuesta"/>
+
+
+</LinearLayout>
